@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>javascipt practice session</title>
+        <style>
+            .container{
+                height: 400px;
+                width: 400px;
+                border-radius: 10px;
+                border: 2px solid black;
+            }
+            .container-lock{
+                height: 400px;
+                width: 400px;
+                border: 3px double rgb(117, 30, 45);
+                border-radius: 10px;
+                box-shadow: 2px 2px 3px 3px rgb(74, 12, 23);
+                background-image: url(./images/diwali\ wishes.jfif);
+            }
+            .faral{
+                height: 400px;
+                width: 400px;
+                border-radius: 10px;
+                border: 3px double yellowgreen;
+                box-shadow: 2px 2px 3px 3px rgb(187, 187, 25);
+                background-image: url(./images/faral\ bg.jfif);
+            }
+            .container-img{
+                height: 200px;
+                width: 350px;
+                margin: auto;
+                display: block;
+                padding-top: 20px;
+            }
+            #line{
+                margin-left:23%;
+                cursor: pointer;
+            }
+            #line-2{
+                margin-left: 35%;
+                cursor: pointer;
+            }
+        </style>
+        <script>
+               function seeFaral(){
+                document.getElementById("img").src="./images/faral.jfif";
+                document.getElementById("diwali").className="faral";
+
+               }
+               function diwaliWishes(){
+                document.getElementById("img").src="./images/diwali.jfif";
+                document.getElementById("diwali").className="container-lock";
+               }
+        </script>
+    </head>
+    <body>
+        <div class="container" id="diwali">
+           <img src="./images/diwali.jfif" class="container-img" id="img"> 
+           <h3 id="line" onclick="seeFaral()">Click here for Diwali Faral</h3>
+           <h4 id="line-2" onclick="diwaliWishes()">Diwali Wishes</h4>
+        </div>
+    </body>
+</html>
