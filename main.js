@@ -24,10 +24,11 @@ var students=["Shravani","Yash","Dhiraj","Janki"];
 
 var stud=students.map((student,index)=>{
     console.log(student + " is a science student");
-    if(index%2==0){
-        console.log(student + " is a brilliant student");
+    if(index%2===0){
+        return student + " is a brilliant student"
     }
     else{
-        console.log(student + " is a avrage student");
+        return student + " is a avrage student"
     }
 })
+console.log(stud);
